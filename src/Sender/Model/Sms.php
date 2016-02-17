@@ -53,7 +53,7 @@ class Sms extends AbstractModel
      */
     public function setContent($message)
     {
-        $this->_content = $message;
+        $this->_content = urlencode($message);
     }
 
     /**
